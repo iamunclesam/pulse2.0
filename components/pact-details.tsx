@@ -327,7 +327,7 @@ export function PactDetails({ id }: { id: string }) {
                 </div>
               </div>
 
-              <Alert variant="warning">
+              <Alert variant="destructive">
                 <AlertTriangle className="h-4 w-4" />
                 <AlertTitle>Collateral Required</AlertTitle>
                 <AlertDescription>Your collateral will be locked until the loan is fully repaid.</AlertDescription>
@@ -468,8 +468,8 @@ export function PactDetails({ id }: { id: string }) {
                     {pact.type === "borrow" 
                       ? "Add Repayment (ADA)" 
                       : pact.type === "cause" 
-                        ? "Add Contribution (ADA)" 
-                        : "Add Stake (ADA)"\
+                      ? "Add Contribution (ADA)" 
+                      : "Add Stake (ADA)"}
                   </Label>
                   <div className="flex gap-2">
                     <Input
